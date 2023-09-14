@@ -1,6 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import Card from '../Card';
+import styled from 'styled-components';
+import { cor2 } from '../UI/variaveis';
+const UlStyle = styled.ul`
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+
+`
+const StyleMain = styled.main`
+padding: 30px 0px;
+  background-color: ${cor2};
+`
 export default function Home() {
   const [personagem, setPersonagem] = useState([]);
   useEffect(() => {
@@ -17,8 +30,8 @@ export default function Home() {
     <header>
       <h1>Dados Da API</h1>
     </header>
-    <main>
-      <ul>
+    <StyleMain>
+      <UlStyle>
             {personagem.map((personagem) => {
                 return(
                     <Card
@@ -29,8 +42,8 @@ export default function Home() {
                     />
                 )   
             })}
-       </ul>
-    </main>
+       </UlStyle>
+    </StyleMain>
         
     </>
   )
