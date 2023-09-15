@@ -10,11 +10,21 @@ const CardStyle = styled.div`
     height: 200px;
     background-color: ${cor1};
     border-radius: 10px;
+    @media (max-width: 768px){
+        width: 400px;
+        height: 500px;
+        flex-direction: column;
+        justify-content: space-around;        }
 `
 const CardImg = styled.img`
     width: 200px;
     height: 100%;
+    @media (max-width: 768px){
+        width: 100%;
+        height: 300px;
+  }
 `
+
 const CardConteudo = styled.div`
     display: flex;
     flex-direction: column;
@@ -38,7 +48,7 @@ const TituloCard = styled.h2`
 const DeadAlive = styled.div`
     border-radius: 20%;
     width:20px;
-    background-color: ${(props)=> props.status == "Dead" ? "red" : props.status == "unknown" ? "black" : "green"};
+    background-color: ${(props)=> props.status === "Dead" ? "red" : props.status === "unknown" ? "black" : "green"};
 `
 export default function Card({img, name, status,species}) {
   return (
