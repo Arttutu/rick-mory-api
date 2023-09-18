@@ -11,7 +11,7 @@ const CardStyle = styled.div`
   background-color: ${cor1};
   border-radius: 10px;
   @media (max-width: 768px) {
-    width: 400px;
+    width: 300px;
     height: 500px;
     padding-bottom: 50px;
     flex-direction: column;
@@ -55,7 +55,7 @@ const DeadAlive = styled.div`
       ? "black"
       : "green"};
 `;
-const tituloLocal = styled.h3`
+const TituloSecundario = styled.h3`
   color: #ffffff;
   font-family: ${font};
 `;
@@ -71,8 +71,8 @@ export default function Card({ img, name, status, species }) {
           <span>--</span>
           <span>{species}</span>
         </Info>
-        <tituloLocal>Last known location:</tituloLocal>
-        <tituloLocal>First seen in:</tituloLocal>
+        <TituloSecundario>Last known location:</TituloSecundario>
+        <TituloSecundario>First seen in:</TituloSecundario>
       </CardConteudo>
     </CardStyle>
   );

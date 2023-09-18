@@ -10,7 +10,6 @@ const UlStyle = styled.ul`
   margin: 0 auto;
   @media (max-width: 768px) {
     padding-inline-start: 0px;
-    gap: 4em;
   }
 `;
 export default function Personagens({ personagem }) {

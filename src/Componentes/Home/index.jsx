@@ -5,8 +5,13 @@ import { cor2 } from "../UI/variaveis";
 import Banner from "../Banner";
 import Personagens from "../Personagens";
 import BotaoPagina from "../BotaoPagina";
+import Rodape from "../Rodape";
 
 const StyleMain = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
   background-color: ${cor2};
   padding: 50px;
 `;
@@ -47,6 +52,7 @@ export default function Home() {
         <Personagens personagem={personagem} />
         <BotaoPagina proxima={nextPage} anterior={previousPage} />
       </StyleMain>
+      <Rodape />
     </>
   );
 }
