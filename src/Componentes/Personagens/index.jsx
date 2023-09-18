@@ -1,6 +1,6 @@
-import React from 'react'
-import Card from '../Card';
-import styled from 'styled-components';
+import React from "react";
+import Card from "../Card";
+import styled from "styled-components";
 
 const UlStyle = styled.ul`
   display: flex;
@@ -8,24 +8,25 @@ const UlStyle = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     padding-inline-start: 0px;
+    gap: 4em;
   }
-`
-export default function Personagens({personagem}) {
+`;
+export default function Personagens({ personagem }) {
   return (
     <UlStyle>
-        {personagem.map((personagem) => {
-            return(
-                <Card
-                    key={personagem.id}
-                    img={personagem.image}
-                    name= {personagem.name}
-                    status={personagem.status}
-                    species ={personagem.species}
-                />
-            )   
-        })}
+      {personagem.map((personagem) => {
+        return (
+          <Card
+            key={personagem.id}
+            img={personagem.image}
+            name={personagem.name}
+            status={personagem.status}
+            species={personagem.species}
+          />
+        );
+      })}
     </UlStyle>
-  )
+  );
 }
