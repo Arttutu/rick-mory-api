@@ -5,9 +5,9 @@ const CaixaRodape = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100v2;
+  width: 100%;
   background-color: ${cor3};
-  padding: 20px;
+  padding: 20px 0px;
 `;
 const StyleRodape = styled.div`
   font-family: ${font};

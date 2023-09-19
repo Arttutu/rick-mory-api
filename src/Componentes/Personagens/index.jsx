@@ -8,9 +8,7 @@ const UlStyle = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  @media (max-width: 768px) {
-    padding-inline-start: 0px;
-  }
+  padding-inline-start: 0px;
 `;
 export default function Personagens({ personagem }) {
   return (
@@ -23,6 +21,8 @@ export default function Personagens({ personagem }) {
             name={personagem.name}
             status={personagem.status}
             species={personagem.species}
+            visto={personagem.location.name}
+            origem={personagem.origin.name}
           />
         );
       })}
