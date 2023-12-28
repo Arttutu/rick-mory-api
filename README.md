@@ -13,7 +13,7 @@ Desenvolvi um site que consome a API do Rick and Morty, utilizei o método APIs 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Arttutu/rick-mory-api/blob/main/home-rick-morty.png?raw=true)
 
 
 ## Autores
